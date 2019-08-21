@@ -1,9 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>aboutus</ion-title>
+<ion-header no-border>
+  <ion-toolbar >
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="logo-toolbar">
+      <ion-img  src="/assets/logo.png"></ion-img>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <ion-card class="welcome-card">
+    <div class="welcome-img">
+      <div class="welcome-background">
+      </div>
+    </div>
+    <div class="welcome-content">
+      <ion-card-header>
+        <ion-card-title>
+          <ion-label text-center>About Us</ion-label>
+          </ion-card-title>
+      </ion-card-header>
+    </div>
+  </ion-card>
+  <ion-grid class="grid-bar">
+      <ion-row class="row1">
+        <ion-col size="3">
+          <ion-img src="/assets/smallimage.png"></ion-img>
+         <!--  <app-custom-round-icon [iconSrc]="'/assets/smallimage.png'" size="icon-md"></app-custom-round-icon> -->
+        </ion-col>
+        <ion-col size="9">
+          <div class="describe0">
+            <p class="title">DESIGNED WITH SMALL BUSINESSES IN MIND.</p>
+            <p class="subtitle">
+              As a small business you do not have the budget to meet huge ERP systems nor the time to
+              learn complicated systems. Pay only for what you use and still have access to all modules you need in your
+              business. We give you total control without locking you up in long term contracts.
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+       <ion-row class="row2">
+        <ion-col size="9">
+          <div class="describe">
+            <p class="title">INTERACT WITH YOUR CUSTOMERS BETTER</p>
+            <p class="subtitle">Automation enables you to interact with your customers in a more efficient way. Using
+              machine learning Automate My Business can learn the typical responses and respond to customer queries on
+              your behalf. </p>
+          </div>
+        </ion-col>
+        <ion-col size="3">
+          <app-custom-round-icon [iconType]="'build'" size="icon-md"></app-custom-round-icon>
+        </ion-col>
+      </ion-row> 
+      </ion-grid>
 </ion-content>
+<ion-footer no-border>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3"></ion-col>
+      <ion-col size="2"><ion-icon name="logo-youtube" color="primary" size="large" ></ion-icon></ion-col>
+      <ion-col size="2"><ion-icon name="logo-twitter" color="primary" size="large"></ion-icon></ion-col>
+      <ion-col size="2"><ion-icon name="logo-facebook" color="primary" size="large"></ion-icon></ion-col>
+      <ion-col size="3"></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

@@ -1,5 +1,5 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header no-border>
+  <ion-toolbar >
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -9,21 +9,23 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="mainbackground">
+<ion-content class="mainbackground" style="background: none transparent;">
   <div class="searcharea">
       <div class="submit-btn"> 
-          <ion-searchbar></ion-searchbar>
+          <ion-searchbar placeholder="What are you looking for?"></ion-searchbar>
         </div>
 
         <div class="submit-btn">
-            <ion-button class="submit-btn">
+            <ion-button class="submit-btn" (click)="scanQR()">
                 <ion-icon slot="start" name="qr-scanner"></ion-icon>
               Scan QR Code
             </ion-button>
         </div>
+        <ion-label>
+          {{testresult}}
+        </ion-label>
   </div>
 
-   
       <div class="submit-btn bottom">
           <ion-button>GO TO LIST</ion-button>
           &nbsp; 

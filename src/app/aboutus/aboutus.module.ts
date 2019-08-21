@@ -4,8 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
-
 import { AboutusPage } from './aboutus.page';
+import {CustomRoundIconComponent} from '../custom-round-icon/custom-round-icon.component'
+import { GeneralModule } from '../custom-round-icon/GeneralModule';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),GeneralModule
   ],
   declarations: [AboutusPage]
 })

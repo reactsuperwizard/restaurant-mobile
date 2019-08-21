@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CustomRoundIconComponent} from '../custom-round-icon/custom-round-icon.component';
 
 @Component({
   selector: 'app-aboutus',
