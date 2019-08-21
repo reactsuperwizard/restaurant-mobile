@@ -14,16 +14,10 @@ export class HomePage {
   }
 
   scanQR(){
-    this.showCamera();
     this.nav.navigateForward('/scan');
   }
 
 
-  private showCamera() {
-    ((<any>window).document.querySelector('ion-app') as HTMLElement).classList.add('cameraView');
-}
-private hideCamera() {
-    ((<any>window).document.querySelector('ion-app') as HTMLElement).classList.remove('cameraView');
-}
+
 
 }
