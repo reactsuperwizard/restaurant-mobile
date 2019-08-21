@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import { Platform, MenuController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
@@ -15,18 +15,33 @@ export class AppComponent {
       title: 'Home',
       url: '/home',
       icon: 'home'
+    },{
+    title: 'QR Scan',
+    url: '/scan',
+    icon: 'qr-scanner'
     },
     {
       title: 'List',
       url: '/list',
       icon: 'list'
+    } ,
+    {
+      title: 'About',
+      url: '/aboutus',
+      icon: 'at'
+    },
+    {
+      title: 'Contact',
+      url: '/contact',
+      icon: ''
     }
   ];
 
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private menuCtrl:MenuController
   ) {
     this.initializeApp();
   }
@@ -37,4 +52,10 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+  async closeMenu(){
+    console.log("closingmenu");
+      this.menuCtrl.close();
+  }
+
 }

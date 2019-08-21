@@ -1,0 +1,11 @@
+.menu_list {
+    position: relative;
+    width: 210px;
+    height: 300px;
+    left: 150px;
+    background: #FFFFFF;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu-enabled.menu-side-end.show-menu .menu-inner {
+    width: 100px;
+}

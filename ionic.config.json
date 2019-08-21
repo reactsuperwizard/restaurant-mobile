@@ -1,5 +1,7 @@
 {
   "name": "sixmenu",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
