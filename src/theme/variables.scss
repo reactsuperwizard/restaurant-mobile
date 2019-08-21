@@ -104,9 +104,35 @@ left: 10px;
  top: 20px;
   }
 
-  ion-app.cameraView, ion-app.cameraView ion-content,ion-app.cameraView .nav-decor{
-    background: transparent none !important;
+  ion-app.cameraView, ion-app.cameraView ion-content, ion-app.cameraView .nav-decor {
+    background: transparent none !important; 
   }
+
+  .clbackground{
+    --background: rgba(255,155,13,0.08);
+    width:  100%; /*or 70%, or what you want*/
+  height: auto; /*or 70%, or what you want*/
+  background-position: inherit; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover;
+  }
+
+  .listtitle{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.bullet {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right:0.25em;
+  background-color: #989aa2;
+  border-radius: 50%;
+}
 
 }
 

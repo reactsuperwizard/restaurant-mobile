@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-list',
@@ -7,33 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListPage implements OnInit {
   private selectedItem: any;
-  private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
-  ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
-  constructor() {
+  public items: Array<{ pic: string; title: string; reviews: string; note: string; subtitle: string  }> = [];
+
+  constructor(private nav: NavController) {
     for (let i = 1; i < 11; i++) {
       this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+        pic: '/assets/featuredimage.png',
+        title: 'Burger and Lobster',
+        reviews:'$$$$$ (3 Reviews)',
+        note: '1301 Avenue,Brooklyn, NY 11230',
+        subtitle: 'https://burgerandlobster.com'
       });
     }
   }
 
   ngOnInit() {
+this.hideCamera();
   }
-  // add back when alpha.4 is out
-  // navigate(item) {
-  //   this.router.navigate(['/list', JSON.stringify(item)]);
-  // }
+  selectItem(item){
+    this.nav.navigateForward('/details');
+  }
+  private hideCamera() {
+    ((<any>window).document.querySelector('ion-app') as HTMLElement).classList.remove('cameraView');
+}
 }

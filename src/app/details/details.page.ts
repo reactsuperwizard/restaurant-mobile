@@ -10,6 +10,7 @@ export class DetailsPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    ((<any>window).document.querySelector('ion-app') as HTMLElement).classList.remove('cameraView');
   }
 
 }
