@@ -3,21 +3,19 @@
 
 /** Ionic CSS Variables **/
 :root {
-  /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary: #FF9B0D;
+  --ion-color-primary-rgb: 255,155,13;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0,0,0;
+  --ion-color-primary-shade: #e0880b;
+  --ion-color-primary-tint: #ffa525;
 
-  /** secondary **/
-  --ion-color-secondary: #0cd1e8;
-  --ion-color-secondary-rgb: 12, 209, 232;
+  --ion-color-secondary: #0554A4;
+  --ion-color-secondary-rgb: 5,84,164;
   --ion-color-secondary-contrast: #ffffff;
-  --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #0bb8cc;
-  --ion-color-secondary-tint: #24d6ea;
+  --ion-color-secondary-contrast-rgb: 255,255,255;
+  --ion-color-secondary-shade: #044a90;
+  --ion-color-secondary-tint: #1e65ad;
 
   /** tertiary **/
   --ion-color-tertiary: #7044ff;
@@ -84,5 +82,21 @@
     ion-list{
       background: white;
     }
+  }
+
+  .mainbackground{
+    --background: url('/assets/imagebg.png') repeat;
+    width:  100%; /*or 70%, or what you want*/
+  height: auto; /*or 70%, or what you want*/
+  background-position: inherit; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover;
+  }
+
+  .logo-toolbar{
+   
+width: 149px;
+left: 10px;
+ top: 20px;
   }
 }

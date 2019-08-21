@@ -41,20 +41,20 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private menuCtrl:MenuController
+    private menuCtrl: MenuController
   ) {
     this.initializeApp();
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      setTimeout(() => {
+        this.splashScreen.hide();
+      }, 1000);
     });
   }
 
   async closeMenu(){
-    console.log("closingmenu");
       this.menuCtrl.close();
   }
 

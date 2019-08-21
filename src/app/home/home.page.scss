@@ -1,4 +1,37 @@
-.welcome-card img {
-  max-height: 35vh;
-  overflow: hidden;
+.searcharea{
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  top:200px;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+}
+
+.submit-btn {
+  width:100wh;  
+  vertical-align: middle;
+}
+.submit-btn ion-button,ion-searchbar {
+  width: 70%;
+  margin: auto;
+}
+
+.grid-bar ion-row ion-col{
+  text-align: center;
+  margin: auto;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 52px;
+  left: 0;
+  right: 0;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+ 
 }
